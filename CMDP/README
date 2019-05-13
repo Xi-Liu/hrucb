@@ -1,0 +1,9 @@
+baseline - Episodic Reinforcement Learning
+
+@inproceedings{modi2018markov,
+  title={Markov decision processes with continuous side information},
+  author={Modi, Aditya and Jiang, Nan and Singh, Satinder and Tewari, Ambuj},
+  booktitle={Algorithmic Learning Theory},
+  pages={597--618},
+  year={2018}
+}
