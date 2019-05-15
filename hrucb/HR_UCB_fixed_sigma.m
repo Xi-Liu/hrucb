@@ -1,4 +1,4 @@
-function [thetaHat, armChosen] = HR_UCB_fixed_sigma(beta, xi, d, lambda, L, contexts, sContexts, sRewards, sigma_max, objective, outcome_type)
+function [thetaHat, armChosen] = HR_UCB_fixed_sigma(beta, xi, d, lambda, L, contexts, sContexts, sRewards, sigma_max, objective)
 
 mu = 0;
 sigma = 1;

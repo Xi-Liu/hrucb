@@ -1,19 +1,4 @@
 %% Configuration file for 10 contexts
-%{
-context_space_size = 10;
-d = 4;
-numActions = 2;
-contexts = cell(context_space_size, 1);
-for k=1:10
-    sampleContext = zeros(1, d*numActions);
-    for j = 1:numActions
-        x = centroids(k,4*j-3:4*j);
-        x = x/norm(x);
-        sampleContext(4*j-3:4*j) = x;        
-    end
-    contexts{k} = sampleContext;
-end
-%}
 
 contexts_all = {{[-0.448354641501606,0.346897534572075,-0.324199395534395,0.757320914729625];[0.769680791518268,0.325972247772909,-0.00130868878275182,0.548937027520789]};...
             {[-0.544996270179980,-0.577636701400021,0.434864409594927,-0.424508953914130];[0.751924338318252,-0.105577940019080,-0.464510695014128,-0.455733367489675]};...

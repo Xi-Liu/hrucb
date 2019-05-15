@@ -1,5 +1,4 @@
-function centroids = context_space_partition(firstTime, d, numActions, numPartition, numSamples)
-if firstTime == 1
+function centroids = context_space_partition(d, numActions, numPartition, numSamples)
     contextMu = zeros(d,1);
     contextSigma = eye(d);
     allContexts = [];
@@ -14,8 +13,5 @@ if firstTime == 1
     end
     % row j is the centroid of cluster j.
     [idx, centroids] = kmeans(allContexts, numPartition, 'MaxIter', 10000);
-    save('centroids.mat','centroids');    
-else
-    load('centroids.mat');
-end
+    %save('centroids.mat','centroids');    
 end

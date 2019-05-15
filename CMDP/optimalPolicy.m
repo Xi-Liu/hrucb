@@ -8,7 +8,6 @@ index = zeros(length(contexts),1);
 for i = 1:length(contexts)
     x = contexts{i};
     normalizedX = (beta - dot(theta,x))/sqrt(get_f_value(phi,x,L));
-    %index(i) = dot(theta,x)*(cdf(pd,normalizedX))^(-1);
     index(i) = (cdf(pd,normalizedX))^(-1);
 end
 [M,armOptimal] = max(index);
